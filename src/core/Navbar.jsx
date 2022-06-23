@@ -2,10 +2,11 @@ import React from 'react'
 import './Navbar.scss'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({ authenticated, logoutUser}) => {
   return (
-    <div className='listContainer'>
+    <div className='navigator'>
         <ul>
+        <img src='https://play-lh.googleusercontent.com/fXQVXTma1ENwAFjsxJ4IT6GntBr3RxWP3HMSLbNdvycl-0tscOQEeJIEAmehcNOt5hCp' alt='logo'></img>
             <li>
                 <Link to='/'>Home</Link>
             </li>
@@ -15,6 +16,11 @@ const Navbar = () => {
             <li>
             <Link to='/planets'>Planets</Link>
             </li>
+            {authenticated ? (
+              <li>
+            <p className='logout' onClick={logoutUser}>Logout</p>
+            </li>) : (<Link to="/login" className='login'>Login</Link>)}
+            
         </ul>
     </div>
   )

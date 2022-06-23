@@ -1,6 +1,14 @@
 .planets{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    color: white;
+    margin: 0px 50px;
     img{
         width: 300px;
         border-radius: 300px;
+        border: 5px solid #7cff17d7;
     }
 }

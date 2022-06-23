@@ -1,14 +1,34 @@
-.listContainer{
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+.navigator{
+    font-family: 'Creepster', cursive;
+    font-size: xx-large;
+    border: #7BFF17 3px solid;
+    border-radius: 50px;
+    margin: 20px; 
     ul{
+        margin: 20px;
+        padding: 0;
         display: flex;
-        justify-content: space-around;
         align-items: center;
-        li{
-            list-style: none;
-            a{
-                text-decoration: none;
-                color: black;
-            }
-        }
+        gap: 40px;
+    img{
+        width: 70px;
+        margin-left: 20px;
     }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    p{
+        color: #7BFF17;
+        margin: 0px;
+    }
+    .login{
+        color: #7BFF17;
+    }
+}
 }
