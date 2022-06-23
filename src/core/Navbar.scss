@@ -18,19 +18,20 @@
     }
     li{
         list-style: none;
+        :hover{
+            color: #7BFF17;
+            transition: 0.5s;
+        }
     }
     a{
         text-decoration: none;
         color: white;
     }
-    p{
-        color: #7BFF17;
-        margin: 0px;
-    }
     .login{
         color: #7BFF17;
     }
     .logout{
+        color: #7BFF17;
         cursor: pointer;
     }
 }

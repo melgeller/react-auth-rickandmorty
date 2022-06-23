@@ -17,7 +17,7 @@ const Navbar = ({ authenticated, logoutUser}) => {
             <Link to='/planets'>Planets</Link>
             </li>
             {authenticated ? (
-              <li>
+              <li className='log'>
             <p className='logout' onClick={logoutUser}>Logout</p>
             </li>) : (<Link to="/login" className='login'>Login</Link>)}
             

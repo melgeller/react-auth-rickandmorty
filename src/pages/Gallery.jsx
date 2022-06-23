@@ -12,8 +12,6 @@ const Gallery = () => {
         <div className='card'>
         <h3 key={character.id}>{character.name}</h3>
         <img src={character.image} alt={character.name}></img>
-        <p>{character.species}</p>
-        <p>{character.gender}</p>
         </div>
     ))}
 
