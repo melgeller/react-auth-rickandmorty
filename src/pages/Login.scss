@@ -1,18 +1,41 @@
 h2{
     font-family: 'Creepster', cursive;
     font-size: xx-large;
-    color: white; 
+    color: white;
+    font-weight: lighter; 
 }
 
 .formLogin{
+    margin-top: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
     
 }
 .formulario{
+    font-size: large;
 color: white;
 display: flex;
+flex-direction: column;
 gap: 20px;
+input{
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    
+}
+button{
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid #7cff17d7 ;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.582);
+    cursor: pointer;
+    font-family: 'Creepster', cursive;
+    font-weight: lighter;
+    font-size: large;
+    
+}
 }
